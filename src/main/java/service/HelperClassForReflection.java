@@ -25,7 +25,6 @@ public class HelperClassForReflection {
         return (String[]) listFieldNames.toArray();
     }
 
-
     public static <T> String getFieldValues(T obj) {
         StringBuilder fieldValues = new StringBuilder();
         Field[] fields = obj.getClass().getDeclaredFields();

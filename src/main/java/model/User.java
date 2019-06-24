@@ -1,10 +1,21 @@
 package model;
 
 import java.util.Objects;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table
 public class User {
+
+    @Id
+    @Column
     private long id;
+    @Column
     private String name;
+    @Column
     private int age;
 
     public User() {
